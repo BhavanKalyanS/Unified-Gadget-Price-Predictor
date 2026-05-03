@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-orange: #FF8C00;
+    --primary-orange-glow: rgba(255, 140, 0, 0.2);
+    --bg-white: #FFFFFF;
+    --selection-bg: #FF8C00;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1E293B;
+    background-color: #FAFBFF;
+}
+
+.glass-sidebar {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.device-toggle-slider {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.predict-btn-glow {
+    transition: all 0.3s;
+}
+
+.predict-btn-glow:hover {
+    box-shadow: 0 8px 30px rgba(255, 140, 0, 0.45);
+    transform: translateY(-2px);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.card-step-up {
+    transition: transform 0.2s ease-out;
+}
+.card-step-up:hover {
+    transform: scale(1.01);
+}
