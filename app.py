@@ -29,6 +29,9 @@ def load_artifacts():
     except Exception as e:
         print(f"Error loading models: {e}. Ensure you have run python utils/train_models.py first.")
 
+# Call immediately so gunicorn loads models in production
+load_artifacts()
+
 @app.route('/')
 def home():
     return render_template('index.html')
